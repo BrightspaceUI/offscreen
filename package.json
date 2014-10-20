@@ -1,0 +1,29 @@
+{
+  "name": "vui-offscreen",
+  "version": "0.0.1",
+  "description": "LESS mixin and CSS for positioning elements offscreen",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Desire2Learn-Valence/valence-ui-offscreen.git"
+  },
+  "keywords": [
+    "vui",
+    "valence-ui",
+    "d2l"
+  ],
+  "author": "D2L Corporation",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/Desire2Learn-Valence/valence-ui-offscreen/issues"
+  },
+  "homepage": "https://github.com/Desire2Learn-Valence/valence-ui-offscreen",
+  "devDependencies": {
+    "del": "^0.1.3",
+    "gulp": "^3.8.8",
+    "gulp-jshint": "^1.8.5",
+    "vui-helpers": "^0.3.0"
+  }
+}
