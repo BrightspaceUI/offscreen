@@ -10,5 +10,5 @@ wish to have elements which are only visible to screen readers.
 
 [npm-url]: https://npmjs.org/package/vui-offscreen
 [npm-image]: https://badge.fury.io/js/vui-offscreen.png
-[ci-image]: https://travis-ci.org/Desire2Learn-Valence/valence-ui-offscreen.svg?branch=master
-[ci-url]: https://travis-ci.org/Desire2Learn-Valence/valence-ui-offscreen
+[ci-image]: https://travis-ci.org/Brightspace/valence-ui-offscreen.svg?branch=master
+[ci-url]: https://travis-ci.org/Brightspace/valence-ui-offscreen
