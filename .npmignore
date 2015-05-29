@@ -1,8 +1,11 @@
-.csslintrc
 .editorconfig
+.gitattributes
 .gitignore
 .npmignore
 .travis.yml
+.csslintrc
 node_modules
-gulpfile.js
+karma.conf.js
 offscreen.css.less
+offscreen.css.scss
+offscreen-less.css

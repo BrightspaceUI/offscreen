@@ -1,9 +1,15 @@
 {
   "name": "vui-offscreen",
-  "version": "0.0.2",
-  "description": "LESS mixin and CSS for positioning elements offscreen",
+  "version": "0.1.0",
+  "description": "Mixins and CSS for positioning elements offscreen",
   "scripts": {
-    "test": "gulp"
+    "clean": "rimraf offscreen.css && rimraf offscreen-less.css",
+    "lint:css": "csslint offscreen.css",
+    "prebuild": "npm run clean",
+    "build:less": "lessc offscreen.css.less > offscreen-less.css",
+    "build:sass": "node-sass --output-style expanded offscreen.css.scss offscreen.css",
+    "build": "npm run build:sass && npm run build:less",
+    "postbuild": "npm run lint:css"
   },
   "repository": {
     "type": "git",
@@ -21,9 +27,9 @@
   },
   "homepage": "https://github.com/Brightspace/valence-ui-offscreen",
   "devDependencies": {
-    "del": "^0.1.3",
-    "gulp": "^3.8.8",
-    "gulp-jshint": "^1.8.5",
-    "vui-helpers": "^0.3.0"
+    "csslint": "^0.10.0",
+    "less": "^2.5.1",
+    "node-sass": "^3.1.1",
+    "rimraf": "^2.3.4"
   }
 }
