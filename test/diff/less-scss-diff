@@ -1,0 +1,13 @@
+===================================================================
+--- offscreen-less.css
++++ offscreen.css
+@@ -4,8 +4,9 @@
+   overflow: hidden;
+   width: 1px;
+   height: 1px;
+ }
++
+ [dir="rtl"] .vui-offscreen {
+   left: auto;
+   right: -10000px;
+ }
