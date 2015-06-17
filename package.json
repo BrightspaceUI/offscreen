@@ -1,20 +1,13 @@
 {
   "name": "vui-offscreen",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Mixins and CSS for positioning elements offscreen",
   "scripts": {
     "clean": "rimraf *.css",
     "prebuild": "npm run clean",
-    "build": "npm run build:sass:css && npm run build:less:css",
-    "build:less:css": "lessc offscreen.css.less > offscreen-less.css",
-    "postbuild:less:css": "csslint offscreen-less.css",
-    "build:sass:css": "node-sass --output-style expanded offscreen.css.scss offscreen.css",
-    "postbuild:sass:css": "csslint offscreen.css",
+    "build": "node-sass --output-style expanded offscreen.css.scss offscreen.css",
     "pretest": "npm run build",
-    "test": "npm run diff:assert",
-    "prediff:assert": "npm run diff:create",
-    "diff:assert": "assertnodiff --file1 ./test/diff/less-scss-diff --file2 ./test/diff/less-scss-diff-new",
-    "diff:create": "createpatch --file1 offscreen-less.css --file2 offscreen.css -o ./test/diff/less-scss-diff-new"
+    "test": "csslint offscreen.css"
   },
   "repository": {
     "type": "git",
@@ -33,8 +26,6 @@
   "homepage": "https://github.com/Brightspace/valence-ui-offscreen",
   "devDependencies": {
     "csslint": "^0.10.0",
-    "diff-cli": "git://github.com/Brightspace/diff-cli.git#v0.0.1",
-    "less": "^2.5.1",
     "node-sass": "^3.1.1",
     "rimraf": "^2.3.4"
   }

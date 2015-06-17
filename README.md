@@ -3,9 +3,7 @@
 [![Build status][ci-image]][ci-url]
 [![Dependency Status][dependencies-image]][dependencies-url]
 
-This component contains Sass mixins and CSS for positioning elements off the screen. LESS mixins are still include for backward compatibility, however these will likely be removed in a future version.
-
-Off-screen elements are valuable from an accessibility perspective when you wish to have elements which are only visible to screen readers. For more information, read [WebAIM's article on Invisible Content](http://webaim.org/techniques/css/invisiblecontent/).
+This component contains Sass mixins and CSS for positioning elements off the screen. Off-screen elements are valuable from an accessibility perspective when you wish to have elements which are only visible to screen readers. For more information, read [WebAIM's article on Invisible Content](http://webaim.org/techniques/css/invisiblecontent/).
 
 For further information on this component and other VUI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
 
