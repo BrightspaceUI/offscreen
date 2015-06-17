@@ -7,6 +7,4 @@
 node_modules
 karma.conf.js
 test
-offscreen.css.less
 offscreen.css.scss
-offscreen-less.css
