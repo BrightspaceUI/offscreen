@@ -1,6 +1,6 @@
 {
   "name": "vui-offscreen",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Mixins and CSS for positioning elements offscreen",
   "scripts": {
     "clean": "rimraf *.css",
