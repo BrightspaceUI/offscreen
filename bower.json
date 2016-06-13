@@ -23,7 +23,6 @@
     ".editorconfig",
     ".eslintrc",
     ".gitignore",
-    ".npmignore",
     ".travis.yml",
     "package.json"
   ]
