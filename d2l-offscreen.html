@@ -1,0 +1,26 @@
+<link rel="import" href="../polymer/polymer.html">
+<dom-module id="d2l-offscreen">
+	<template>
+		<style>
+			:host {
+				display: inline-block;
+				position: absolute !important;
+				left: -10000px;
+				overflow: hidden;
+				width: 1px;
+				height: 1px;
+				white-space: nowrap;
+			}
+			:host-context([dir="rtl"]) {
+				left: auto;
+				right: -10000px;
+			}
+		</style>
+		<content></content>
+	</template>
+	<script>
+		Polymer({
+			is: 'd2l-offscreen'
+		});
+	</script>
+</dom-module>
