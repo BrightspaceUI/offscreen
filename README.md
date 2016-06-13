@@ -1,38 +1,42 @@
-# vui-offscreen
+# d2l-offscreen
 [![Bower version][bower-image]][bower-url]
-[![NPM version][npm-image]][npm-url]
 [![Build status][ci-image]][ci-url]
-[![Dependency Status][dependencies-image]][dependencies-url]
 
-This component contains [SASS mixins](http://sass-lang.com/) and CSS wich can be used to position elements off the screen in an accessible manor.
+This component contain a [Polymer](https://www.polymer-project.org/1.0/)-based web component and [Sass mixin](http://sass-lang.com/), either of which can be used to position elements off the screen in an accessible manor.
 
-For further information on this and other VUI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
+For further information on this and other D2L UI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
 
 ## Installation
 
-`vui-offscreen` can be installed from [Bower][bower-url]:
+`d2l-offscreen` can be installed from [Bower][bower-url]:
 ```shell
-bower install vui-offscreen
-```
-
-Or alternatively from [NPM][npm-url]:
-```shell
-npm install vui-offscreen
-```
-
-Depending on which installation method you choose, use that path when doing the SASS import:
-
-```scss
-@import 'bower_components/vui-offscreen/offscreen.scss';
-// or...
-@import 'node_modules/vui-offscreen/offscreen.scss';
+bower install d2l-offscreen
 ```
 
 ## Usage
 
 Off-screen elements are valuable from an accessibility perspective when you wish to use elements which are only visible to screen readers. For more information, read [WebAIM's article on Invisible Content](http://webaim.org/techniques/css/invisiblecontent/).
 
-To position an element offscreen, apply the `vui-offscreen()` mixin using any  CSS selector.
+### Polymer Web component
+
+Include the [webcomponents.js](http://webcomponents.org/polyfills/) "lite" polyfill (for browsers who don't natively support web components), then import `d2l-offscreen.html`.
+
+```html
+<head>
+	<script src="https://s.brightspace.com/lib/webcomponentsjs/0.7.21/webcomponents-lite.min.js"></script>
+	<link rel="import" href="../d2l-offscreen/d2l-offscreen.html">
+</head>
+```
+
+The `<d2l-offscreen>` custom element can now be used in your markup, the children of which will be hidden offscreen.
+
+```html
+<d2l-offscreen>This message will only be visible to assistive technology, such as a screen reader.</d2l-offscreen>
+```
+
+### Sass Mixin
+
+Alternatively, to position an element offscreen using the Sass mixin, apply the `d2l-offscreen()` mixin to any CSS selector.
 
 For example, to hide this message:
 ```html
@@ -41,20 +45,17 @@ For example, to hide this message:
 
 SCSS:
 ```scss
+@import 'bower_components/d2l-offscreen/offscreen.scss';
 .offscreen {
-	@include vui-offscreen();
+	@include d2l-offscreen();
 }
 ```
 
 ## Coding styles
 
-See the [VUI Best Practices & Style Guide](https://github.com/Brightspace/valence-ui-docs/wiki/Best-Practices-&-Style-Guide) for information on VUI naming conventions, plus information about the [EditorConfig](http://editorconfig.org) rules used in this repo.
+See the [VUI Best Practices & Style Guide](https://github.com/Brightspace/valence-ui-docs/wiki/Best-Practices-&-Style-Guide) for information on D2L UI naming conventions, plus information about the [EditorConfig](http://editorconfig.org) rules used in this repo.
 
-[bower-url]: http://bower.io/search/?q=vui-offscreen
-[bower-image]: https://img.shields.io/bower/v/vui-offscreen.svg
-[npm-url]: https://npmjs.org/package/vui-offscreen
-[npm-image]: https://img.shields.io/npm/v/vui-offscreen.svg
-[ci-image]: https://travis-ci.org/Brightspace/valence-ui-offscreen.svg?branch=master
-[ci-url]: https://travis-ci.org/Brightspace/valence-ui-offscreen
-[dependencies-url]: https://david-dm.org/brightspace/valence-ui-offscreen
-[dependencies-image]: https://img.shields.io/david/Brightspace/valence-ui-offscreen.svg
+[bower-url]: http://bower.io/search/?q=d2l-offscreen
+[bower-image]: https://img.shields.io/bower/v/d2l-offscreen.svg
+[ci-image]: https://travis-ci.org/Brightspace/d2l-offscreen-ui.svg?branch=master
+[ci-url]: https://travis-ci.org/Brightspace/d2l-offscreen-ui
