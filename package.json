@@ -1,6 +1,6 @@
 {
   "name": "d2l-offscreen",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Polymer web component and Sass mixin for positioning elements offscreen",
   "private": true,
   "scripts": {

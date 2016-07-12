@@ -1,0 +1,17 @@
+<link rel="import" href="../polymer/polymer.html">
+<dom-module id="d2l-offscreen-shared-styles">
+	<template>
+		<style>
+			:root {
+				--d2l-offscreen: {
+					position: absolute !important;
+					left: -10000px;
+					overflow: hidden;
+					width: 1px;
+					height: 1px;
+					white-space: nowrap;
+				};
+			}
+		</style>
+	</template>
+</dom-module>

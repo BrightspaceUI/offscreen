@@ -2,7 +2,7 @@
 [![Bower version][bower-image]][bower-url]
 [![Build status][ci-image]][ci-url]
 
-This component contain a [Polymer](https://www.polymer-project.org/1.0/)-based web component and [Sass mixin](http://sass-lang.com/), either of which can be used to position elements off the screen in an accessible manor.
+This component contains a [Polymer](https://www.polymer-project.org/1.0/)-based web component and mixin, as well as a [Sass mixin](http://sass-lang.com/). Either of these can be used to position elements off the screen in an accessible manor.
 
 For further information on this and other D2L UI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
 
@@ -15,7 +15,7 @@ bower install d2l-offscreen
 
 ## Usage
 
-Off-screen elements are valuable from an accessibility perspective when you wish to use elements which are only visible to screen readers. For more information, read [WebAIM's article on Invisible Content](http://webaim.org/techniques/css/invisiblecontent/).
+Off-screen elements are valuable from an accessibility perspective when you wish to have elements which are only visible to screen readers. For more information, read [WebAIM's article on Invisible Content](http://webaim.org/techniques/css/invisiblecontent/).
 
 ### Polymer Web component
 
@@ -33,6 +33,22 @@ The `<d2l-offscreen>` custom element can now be used in your markup, the childre
 ```html
 <d2l-offscreen>This message will only be visible to assistive technology, such as a screen reader.</d2l-offscreen>
 ```
+
+## Polymer Mixin
+
+Alternatively, you can apply the offscreen styles to an existing element using the mixin.
+
+You'll still include the web component polyfill, but instead of importing `d2l-offscreen.html`, import `d2l-offscreen-shared-styles.html`. Include it on your style block and apply the `--d2l-offscreen` mixin to any CSS selector:
+
+```html
+<link rel="import" href="../d2l-offscreen/d2l-offscreen-shared-styles.html">
+<style include="d2l-offscreen-shared-styles">
+my-element {
+	@apply(--d2l-offscreen);
+}
+```
+
+More on [Polymer shared style modules](https://www.polymer-project.org/1.0/docs/devguide/styling#style-modules)...
 
 ### Sass Mixin
 
