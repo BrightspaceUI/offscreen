@@ -1,19 +1,11 @@
 <link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="d2l-offscreen-shared-styles.html">
 <dom-module id="d2l-offscreen">
 	<template>
-		<style>
+		<style include="d2l-offscreen-shared-styles">
 			:host {
 				display: inline-block;
-				position: absolute !important;
-				left: -10000px;
-				overflow: hidden;
-				width: 1px;
-				height: 1px;
-				white-space: nowrap;
-			}
-			:host-context([dir="rtl"]) {
-				left: auto;
-				right: -10000px;
+				@apply(--d2l-offscreen);
 			}
 		</style>
 		<content></content>
