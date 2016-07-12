@@ -2,7 +2,7 @@
 [![Bower version][bower-image]][bower-url]
 [![Build status][ci-image]][ci-url]
 
-This component contains a [Polymer](https://www.polymer-project.org/1.0/)-based web component and mixin, as well as a [Sass mixin](http://sass-lang.com/). Either of these can be used to position elements off the screen in an accessible manor.
+This component contains a [Polymer](https://www.polymer-project.org/1.0/)-based web component and mixin, as well as a [Sass mixin](http://sass-lang.com/). Any of these can be used to position elements off the screen in an accessible manor.
 
 For further information on this and other D2L UI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
 
@@ -34,11 +34,11 @@ The `<d2l-offscreen>` custom element can now be used in your markup, the childre
 <d2l-offscreen>This message will only be visible to assistive technology, such as a screen reader.</d2l-offscreen>
 ```
 
-## Polymer Mixin
+### Polymer Mixin
 
 Alternatively, you can apply the offscreen styles to an existing element using the mixin.
 
-You'll still include the web component polyfill, but instead of importing `d2l-offscreen.html`, import `d2l-offscreen-shared-styles.html`. Include it on your style block and apply the `--d2l-offscreen` mixin to any CSS selector:
+You'll still include the web component polyfill, but instead of importing `d2l-offscreen.html`, import `d2l-offscreen-shared-styles.html`. Include `d2l-offscreen-shared-styles` on your style block and apply the `--d2l-offscreen` mixin to any CSS selector:
 
 ```html
 <link rel="import" href="../d2l-offscreen/d2l-offscreen-shared-styles.html">
