@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Brightspace/d2l-offscreen-ui.git"
+    "url": "https://github.com/BrightspaceUI/offscreen.git"
   },
   "keywords": [
     "d2l",
@@ -26,9 +26,9 @@
   "author": "D2L Corporation",
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/Brightspace/d2l-offscreen-ui/issues"
+    "url": "https://github.com/BrightspaceUI/offscreen/issues"
   },
-  "homepage": "https://github.com/Brightspace/d2l-offscreen-ui",
+  "homepage": "https://github.com/BrightspaceUI/offscreen",
   "devDependencies": {
     "bower": "^1.7.9",
     "eslint": "^2.5.3",
