@@ -73,5 +73,5 @@ See the [VUI Best Practices & Style Guide](https://github.com/Brightspace/valenc
 
 [bower-url]: http://bower.io/search/?q=d2l-offscreen
 [bower-image]: https://img.shields.io/bower/v/d2l-offscreen.svg
-[ci-image]: https://travis-ci.org/Brightspace/d2l-offscreen-ui.svg?branch=master
-[ci-url]: https://travis-ci.org/Brightspace/d2l-offscreen-ui
+[ci-image]: https://travis-ci.org/BrightspaceUI/offscreen.svg?branch=master
+[ci-url]: https://travis-ci.org/BrightspaceUI/offscreen
