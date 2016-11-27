@@ -1,4 +1,3 @@
+bower_components/
 node_modules/
-test/output
-test/diff/less-scss-diff-new
 offscreen.css
