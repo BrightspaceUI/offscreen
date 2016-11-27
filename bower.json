@@ -17,7 +17,7 @@
     "web component"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.1.0"
+    "polymer": "^1.7.0"
   },
   "ignore": [
     ".editorconfig",
