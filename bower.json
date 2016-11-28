@@ -19,6 +19,9 @@
   "dependencies": {
     "polymer": "^1.7.0"
   },
+  "devDependencies": {
+    "d2l-demo-template": "~0.0.5"
+  },
   "ignore": [
     ".editorconfig",
     ".eslintrc",
