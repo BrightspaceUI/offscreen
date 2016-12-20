@@ -3,18 +3,21 @@
 	<template>
 		<style>
 			:host {
-				--d2l-offscreen: {
+				--d2l-offscreen-ltr-rtl-shared: {
 					position: absolute !important;
-					left: -10000px;
 					overflow: hidden;
 					width: 1px;
 					height: 1px;
 					white-space: nowrap;
+				}
+				--d2l-offscreen: {
+					@apply(--d2l-offscreen-ltr-rtl-shared);
+					left: -10000px;
 				};
 			}
 			:host-context([dir="rtl"]) {
 				--d2l-offscreen: {
-					left: 0;
+					@apply(--d2l-offscreen-ltr-rtl-shared);
 					right: -10000px;
 				};
 			}
