@@ -5,13 +5,13 @@
 		<style include="d2l-offscreen-shared-styles">
 			:host {
 				display: inline-block;
-				@apply(--d2l-offscreen);
+				@apply --d2l-offscreen;
 			}
 			:host(:dir(rtl)) {
-				@apply(--d2l-offscreen-rtl);
+				@apply --d2l-offscreen-rtl;
 			}
 			:host-context([dir="rtl"]) {
-				@apply(--d2l-offscreen-rtl);
+				@apply --d2l-offscreen-rtl;
 			}
 		</style>
 		<slot></slot>
