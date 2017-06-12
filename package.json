@@ -30,10 +30,9 @@
   },
   "homepage": "https://github.com/BrightspaceUI/offscreen",
   "devDependencies": {
-    "bower": "^1.7.9",
     "eslint": "^2.5.3",
     "eslint-config-brightspace": "^0.2.1",
     "eslint-plugin-html": "^1.4.0",
-    "polymer-cli": "^0.16.0"
+    "polymer-cli": "^1.1.0"
   }
 }
