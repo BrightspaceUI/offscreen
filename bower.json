@@ -20,7 +20,8 @@
     "polymer": "Polymer/polymer#1.9 - 2"
   },
   "devDependencies": {
-    "d2l-demo-template": "0.0.12 - 1.0.1"
+    "d2l-demo-template": "0.0.12 - 1.0.1",
+    "web-component-tester": "Polymer/web-component-tester#^6.0.0"
   },
   "variants": {
     "1.x": {
@@ -28,7 +29,8 @@
         "polymer": "Polymer/polymer#1.9"
       },
       "devDependencies": {
-        "d2l-demo-template": "^0.0.12"
+        "d2l-demo-template": "^0.0.12",
+        "web-component-tester": "Polymer/web-component-tester#^4.0.0"
       },
       "resolutions": {
         "webcomponentsjs": "^0.7"

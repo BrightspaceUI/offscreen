@@ -11,14 +11,8 @@
 					white-space: nowrap;
 					left: -10000px;
 				};
-			}
-			:host(:dir(rtl)) {
-				--d2l-offscreen: {
-					position: absolute !important;
-					overflow: hidden;
-					width: 1px;
-					height: 1px;
-					white-space: nowrap;
+				--d2l-offscreen-rtl {
+					left: 0;
 					right: -10000px;
 				};
 			}
