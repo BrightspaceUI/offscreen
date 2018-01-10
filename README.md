@@ -61,7 +61,9 @@ The `<d2l-offscreen>` custom element can now be used in your markup, the childre
 -->
 ```html
 Some offscreen content:
-<d2l-offscreen>This message will only be visible to assistive technology, such as a screen reader.</d2l-offscreen>
+<d2l-offscreen>
+	This message will only be visible to assistive technology, such as a screen reader.
+</d2l-offscreen>
 ```
 
 ### Polymer Mixin
