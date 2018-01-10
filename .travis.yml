@@ -1,6 +1,4 @@
 language: node_js
-node_js: stable
-sudo: false
-install:
-  - npm install
-  - polymer install --variants
+node_js: node
+script:
+- npm run test
