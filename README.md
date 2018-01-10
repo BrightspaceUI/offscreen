@@ -22,6 +22,15 @@ Off-screen elements are valuable from an accessibility perspective when you wish
 
 Include the [webcomponents.js](http://webcomponents.org/polyfills/) "lite" polyfill (for browsers who don't natively support web components), then import `d2l-offscreen.html`.
 
+```html
+<head>
+	<script src="../webcomponentsjs/webcomponents-lite.js"></script>
+	<link rel="import" href="../d2l-offscreen/d2l-offscreen.html">
+</head>
+```
+
+The `<d2l-offscreen>` custom element can now be used in your markup, the children of which will be hidden offscreen.
+
 <!---
 ```
 <custom-element-demo>
@@ -36,6 +45,14 @@ Include the [webcomponents.js](http://webcomponents.org/polyfills/) "lite" polyf
       html {
         font-size: 20px;
       }
+      body {
+        color: var(--d2l-color-ferrite);
+        font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+        letter-spacing: 0.01rem;
+        font-size: 0.95rem;
+        font-weight: 400;
+        line-height: 1.4rem;
+      }
     </style>
     <next-code-block></next-code-block>
   </template>
@@ -44,19 +61,6 @@ Include the [webcomponents.js](http://webcomponents.org/polyfills/) "lite" polyf
 -->
 ```html
 Some offscreen content:
-<d2l-offscreen>This message will only be visible to assistive technology, such as a screen reader.</d2l-offscreen>
-```
-
-```html
-<head>
-	<script src="../webcomponentsjs/webcomponents-lite.js"></script>
-	<link rel="import" href="../d2l-offscreen/d2l-offscreen.html">
-</head>
-```
-
-The `<d2l-offscreen>` custom element can now be used in your markup, the children of which will be hidden offscreen.
-
-```html
 <d2l-offscreen>This message will only be visible to assistive technology, such as a screen reader.</d2l-offscreen>
 ```
 
