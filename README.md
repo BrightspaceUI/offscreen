@@ -1,4 +1,5 @@
 # d2l-offscreen
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/BrightspaceUI/offscreen)
 [![Bower version][bower-image]][bower-url]
 [![Build status][ci-image]][ci-url]
 
@@ -23,15 +24,46 @@ Include the [webcomponents.js](http://webcomponents.org/polyfills/) "lite" polyf
 
 ```html
 <head>
-	<script src="https://s.brightspace.com/lib/webcomponentsjs/0.7.21/webcomponents-lite.min.js"></script>
+	<script src="../webcomponentsjs/webcomponents-lite.js"></script>
 	<link rel="import" href="../d2l-offscreen/d2l-offscreen.html">
 </head>
 ```
 
 The `<d2l-offscreen>` custom element can now be used in your markup, the children of which will be hidden offscreen.
 
+<!---
+```
+<custom-element-demo>
+  <template>
+    <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../d2l-typography/d2l-typography.html">
+    <link rel="import" href="d2l-offscreen.html">
+    <custom-style include="d2l-typography">
+      <style is="custom-style" include="d2l-typography"></style>
+    </custom-style>
+    <style>
+      html {
+        font-size: 20px;
+      }
+      body {
+        color: var(--d2l-color-ferrite);
+        font-family: 'Lato', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+        letter-spacing: 0.01rem;
+        font-size: 0.95rem;
+        font-weight: 400;
+        line-height: 1.4rem;
+      }
+    </style>
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
 ```html
-<d2l-offscreen>This message will only be visible to assistive technology, such as a screen reader.</d2l-offscreen>
+Some offscreen content:
+<d2l-offscreen>
+	This message will only be visible to assistive technology, such as a screen reader.
+</d2l-offscreen>
 ```
 
 ### Polymer Mixin
@@ -43,8 +75,9 @@ You'll still include the web component polyfill, but instead of importing `d2l-o
 ```html
 <link rel="import" href="../d2l-offscreen/d2l-offscreen-shared-styles.html">
 <style include="d2l-offscreen-shared-styles">
+
 my-element {
-	@apply(--d2l-offscreen);
+	@apply --d2l-offscreen;
 }
 ```
 
@@ -56,7 +89,9 @@ Alternatively, to position an element offscreen using the Sass mixin, apply the 
 
 For example, to hide this message:
 ```html
-<p class="offscreen">This message will only be visible to assistive technology, such as a screen reader.</p>
+<p class="offscreen">
+	This message will only be visible to assistive technology, such as a screen reader.
+</p>
 ```
 
 SCSS:
@@ -67,9 +102,39 @@ SCSS:
 }
 ```
 
-## Coding styles
+## Developing, Testing and Contributing
 
-See the [VUI Best Practices & Style Guide](https://github.com/Brightspace/valence-ui-docs/wiki/Best-Practices-&-Style-Guide) for information on D2L UI naming conventions, plus information about the [EditorConfig](http://editorconfig.org) rules used in this repo.
+After cloning the repo, run `npm install` to install dependencies.
+
+If you don't have it already, install the [Polymer CLI](https://www.polymer-project.org/2.0/docs/tools/polymer-cli) globally:
+
+```shell
+npm install -g polymer-cli
+```
+
+To start a [local web server](https://www.polymer-project.org/2.0/docs/tools/polymer-cli-commands#serve) that hosts the demo page and tests:
+
+```shell
+polymer serve
+```
+
+To lint ([eslint](http://eslint.org/) and [Polymer lint](https://www.polymer-project.org/2.0/docs/tools/polymer-cli-commands#lint)):
+
+```shell
+npm run lint
+```
+
+To run unit tests locally using [Polymer test](https://www.polymer-project.org/2.0/docs/tools/polymer-cli-commands#tests):
+
+```shell
+polymer test --skip-plugin sauce
+```
+
+To lint AND run local unit tests:
+
+```shell
+npm test
+```
 
 [bower-url]: http://bower.io/search/?q=d2l-offscreen
 [bower-image]: https://img.shields.io/bower/v/d2l-offscreen.svg

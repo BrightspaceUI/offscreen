@@ -1,13 +1,12 @@
 {
   "name": "d2l-offscreen",
-  "version": "2.2.1",
   "description": "Polymer web component and Sass mixin for positioning elements offscreen",
   "private": true,
   "scripts": {
-    "postinstall": "bower install",
-    "test": "npm run test:lint:html && npm run test:lint:wc",
+    "postinstall": "polymer install --variants",
     "test:lint:html": "eslint *.html",
-    "test:lint:wc": "polymer lint d2l-offscreen.html"
+    "test:lint:wc": "polymer lint",
+    "test": "npm run test:lint:html && npm run test:lint:wc"
   },
   "repository": {
     "type": "git",
@@ -30,9 +29,9 @@
   },
   "homepage": "https://github.com/BrightspaceUI/offscreen",
   "devDependencies": {
-    "eslint": "^2.5.3",
-    "eslint-config-brightspace": "^0.2.1",
-    "eslint-plugin-html": "^1.4.0",
-    "polymer-cli": "^1.1.0"
+    "eslint": "^4.15.0",
+    "eslint-config-brightspace": "^0.4.0",
+    "eslint-plugin-html": "^4.0.1",
+    "polymer-cli": "^1.5.7"
   }
 }
