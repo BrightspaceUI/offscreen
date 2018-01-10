@@ -89,7 +89,9 @@ Alternatively, to position an element offscreen using the Sass mixin, apply the 
 
 For example, to hide this message:
 ```html
-<p class="offscreen">This message will only be visible to assistive technology, such as a screen reader.</p>
+<p class="offscreen">
+	This message will only be visible to assistive technology, such as a screen reader.
+</p>
 ```
 
 SCSS:
