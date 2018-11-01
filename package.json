@@ -8,6 +8,7 @@
     "test:lint:wc": "polymer lint",
     "test:lint": "npm run test:lint:html && npm run test:lint:wc",
     "test:polymer:local": "polymer test --skip-plugin sauce",
+    "test:polymer:sauce": "polymer test --skip-plugin local",
     "test": "npm run test:lint && npm run test:polymer:local"
   },
   "repository": {
@@ -31,9 +32,11 @@
   },
   "homepage": "https://github.com/BrightspaceUI/offscreen",
   "devDependencies": {
+    "chromedriver": "^2.40.0",
     "eslint": "^4.15.0",
     "eslint-config-brightspace": "^0.4.0",
     "eslint-plugin-html": "^4.0.1",
-    "polymer-cli": "^1.5.7"
+    "polymer-cli": "^1.5.7",
+    "sauce-connect-launcher": "^1.2.4"
   }
 }
