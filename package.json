@@ -6,7 +6,9 @@
     "postinstall": "polymer install --variants",
     "test:lint:html": "eslint *.html",
     "test:lint:wc": "polymer lint",
-    "test": "npm run test:lint:html && npm run test:lint:wc"
+    "test:lint": "npm run test:lint:html && npm run test:lint:wc",
+    "test:polymer:local": "polymer test --skip-plugin sauce",
+    "test": "npm run test:lint && npm run test:polymer:local"
   },
   "repository": {
     "type": "git",
