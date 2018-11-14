@@ -23,13 +23,14 @@
 
 		<script>
 			suite('d2l-offscreen', function() {
+				var offscreen, element;
 				setup(function() {
-					this.fixture = fixture('basic');
-					this.element = this.fixture.querySelector('d2l-offscreen');
+					offscreen = fixture('basic');
+					element = offscreen.querySelector('d2l-offscreen');
 				});
 
 				test('instantiating the element works', function() {
-					expect(this.element.is).to.equal('d2l-offscreen');
+					expect(element.is).to.equal('d2l-offscreen');
 				});
 			});
 		</script>
