@@ -6,10 +6,11 @@
 
 		<title>d2l-offscreen test</title>
 
-		<script src="../../webcomponentsjs/webcomponents-lite.js"></script>
-		<script src="../../web-component-tester/browser.js"></script>
+		<script src="../../@babel/polyfill/browser.js"></script>
+		<script src="../../@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+		<script src="../../wct-browser-legacy/browser.js"></script>
 
-		<link rel="import" href="../d2l-offscreen.html">
+		<script type="module" src="../d2l-offscreen.js"></script>
 	</head>
 	<body>
 		<test-fixture id="a11y">
@@ -18,10 +19,12 @@
 			</template>
 		</test-fixture>
 
-		<script>
-			suite('a11y', function() {
-				a11ySuite('a11y');
-			});
-		</script>
+		<script type="module">
+import '../d2l-offscreen.js';
+import { a11ySuite } from '../../wct-browser-legacy/a11ySuite.js';
+suite('a11y', function() {
+	a11ySuite('a11y');
+});
+</script>
 	</body>
 </html>
