@@ -25,6 +25,7 @@ deploy:
     tags: true
 env:
   global:
+  - OWNER_NAME=BrightspaceUI
   - REPO_NAME=offscreen
   - SAUCE_USERNAME: Desire2Learn
   - secure: RtWC2uMUHvox7Y/qdWd7wrxEYedg1MdnZp9aoI2jL8KP4gi/efeFhzBIjIShnv6hnkJdf7Vy+5PTwgp4q6i4HZzmIAjyEGX+J5xd8emd3yrYg2puBrKI4bE+qzjnrWsc/9tbeqbRviFZzJzLzGCz9t1H3m/USKnzU71z7M3lFlA=
