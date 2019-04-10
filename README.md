@@ -3,9 +3,9 @@
 [![Bower version][bower-image]][bower-url]
 [![Build status][ci-image]][ci-url]
 
-This component contains a [Polymer](https://www.polymer-project.org/1.0/)-based web component and mixin, as well as a [Sass mixin](http://sass-lang.com/). Any of these can be used to position elements off the screen in an accessible manor.
+This component contains a [Polymer](https://www.polymer-project.org/)-based web component and mixin, as well as a [Sass mixin](http://sass-lang.com/). Any of these can be used to position elements off the screen in an accessible manor.
 
-For further information on this and other D2L UI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
+For further information on this and other components, refer to [The Brightspace UI Guide](https://github.com/BrightspaceUI/guide/wiki).
 
 ## Installation
 
