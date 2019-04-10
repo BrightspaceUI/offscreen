@@ -25,7 +25,7 @@
     "test": "npm run test:lint && npm run test:polymer:local"
   },
   "author": "D2L Corporation",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/BrightspaceUI/offscreen/issues"
   },
