@@ -138,8 +138,8 @@ npm test
 
 [bower-url]: http://bower.io/search/?q=d2l-offscreen
 [bower-image]: https://img.shields.io/bower/v/d2l-offscreen.svg
-[ci-image]: https://travis-ci.org/BrightspaceUI/offscreen.svg?branch=master
-[ci-url]: https://travis-ci.org/BrightspaceUI/offscreen
+[ci-image]: https://travis-ci.com/BrightspaceUI/offscreen.svg?branch=master
+[ci-url]: https://travis-ci.com/BrightspaceUI/offscreen
 
 ## Versioning & Releasing
 
